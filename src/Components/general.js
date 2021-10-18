@@ -24,11 +24,15 @@ import ReactDOM from "react-dom";
                 <h2>Educational Experience</h2>
                     <label>
                         School Name:
-                        <input type="text" name="name"></input>
+                        <input type="text" name="school-name"></input>
                     </label>
                     <label>
-                        Name:
-                        <input type="text" name="name"></input>
+                        Title of Study:
+                        <input type="text" name="title"></input>
+                    </label>
+                    <label>
+                        Date of Study:
+                        <input type="text" name="date-of-study"></input>
                     </label>
                 </form>
             </div>
