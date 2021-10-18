@@ -34,6 +34,23 @@ import ReactDOM from "react-dom";
                         Date of Study:
                         <input type="text" name="date-of-study"></input>
                     </label>
+                    <h2>Practical Experience</h2>
+                    <label>
+                        Company Name:
+                        <input type="text" name="company"></input>
+                    </label>
+                    <label>
+                        Position Title:
+                        <input type="text" name="position-title"></input>
+                    </label>
+                    <label>
+                        Date Started:
+                        <input type="number" name="date-started"></input>
+                    </label>
+                    <label>
+                        Date Ended:
+                        <input type="number" name="date-started"></input>
+                    </label>
                 </form>
             </div>
         )
