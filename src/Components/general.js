@@ -4,8 +4,10 @@ import ReactDOM from "react-dom";
  export class General extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {value: 'name'
-        }
+        this.state = {name: '',
+                      email:'',
+                      number:''  
+        };
     }; 
     render () {
         return (
@@ -26,6 +28,7 @@ import ReactDOM from "react-dom";
                         Phone Number:
                         <input type="number" name="number"></input>
                     </label>
+                    <input type="submit" value="Submit" />
                 <h2>Educational Experience</h2>
                     <label>
                         School Name:
@@ -39,6 +42,7 @@ import ReactDOM from "react-dom";
                         Date of Study:
                         <input type="text" name="date-of-study"></input>
                     </label>
+                    <input type="submit" value="Submit" />
                     <h2>Practical Experience</h2>
                     <label>
                         Company Name:
