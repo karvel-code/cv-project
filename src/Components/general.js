@@ -24,6 +24,8 @@ import ReactDOM from "react-dom";
         this.handlePhoneChange = this.handlePhoneChange.bind(this)
         this.handleSchoolNameChange = this.handleSchoolNameChange.bind(this)
         this.handleStudyTitleChange = this.handleStudyTitleChange.bind(this)
+        this.handleDateOfStudyChange = this.handleDateOfStudyChange.bind(this)
+        this.handleCompanyChange = this.handleCompanyChange.bind(this)
     }; 
 
     handleNameChange(event) {
@@ -47,13 +49,31 @@ import ReactDOM from "react-dom";
     handleSchoolNameChange(event) {
         this.setState({
             schoolName:event.target.value
-        })
+        });
     }
     
     handleStudyTitleChange(event) {
         this.setState({
             studyTitle:event.target.value
-        })
+        });
+    }
+
+    handleDateOfStudyChange(event) {
+        this.setState({
+            dateOfStudy:event.target.value
+        });
+    }
+
+    handleCompanyChange(event) {
+        this.setState({
+            company:event.target.value
+        });
+    }
+
+    handlePositionTitleChange(event) {
+        this.setState({
+            positionTitle:event.target.value
+        });
     }
 
     handleSubmit(event) {
@@ -69,7 +89,7 @@ import ReactDOM from "react-dom";
         this.setState({
             formToggle:true,
             contentToggle:false
-        })
+        });
     }
 
     render () {
@@ -103,16 +123,16 @@ import ReactDOM from "react-dom";
                         </label>
                         <label>
                             Date of Study:
-                            <input type="text" name="dateOfStudy"></input>
+                            <input type="text" name="dateOfStudy" onChange={this.handleDateOfStudyChange} defaultValue={this.state.dateOfStudy} />
                         </label>
                         <h2>Practical Experience</h2>
                         <label>
                             Company Name:
-                            <input type="text" name="company"></input>
+                            <input type="text" name="company" onChange={this.handleCompanyChange} defaultValue={this.state.company} />
                         </label>
                         <label>
                             Position Title:
-                            <input type="text" name="positionTitle"></input>
+                            <input type="text" name="positionTitle" onChange={this.handlePositionTitleChange} defaultValue={this.state.positionTitle} />
                         </label>
                         <label>
                             Date Started:
