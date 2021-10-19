@@ -12,7 +12,8 @@ import ReactDOM from "react-dom";
                     };
         this.handleNameChange = this.handleNameChange.bind(this) 
         this.handleEmailChange = this.handleEmailChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)        
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleEdit = this.handleEdit.bind(this)       
     }; 
 
     handleNameChange(event) {
@@ -105,7 +106,7 @@ import ReactDOM from "react-dom";
                     <h1>{this.state.name}</h1>
                     <h1>{this.state.email}</h1>
                     <h1>{this.state.number}</h1>
-                    <input type="submit"value="Edit" />
+                    <input type="submit"value="Edit" onClick={this.handleEdit} />
                 </div>
             )
         }
