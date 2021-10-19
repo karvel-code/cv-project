@@ -8,12 +8,21 @@ import ReactDOM from "react-dom";
                       email:' ',
                       number:' ',
                       formToggle:true,
-                      contentToggle:false  
+                      contentToggle:false,
+                      schoolName:' ',
+                      studyTitle:' ',
+                      dateOfStudy:' ',
+                      company:' ',
+                      positionTitle:' ',
+                      dateStarted:' ',
+                      dateEnded:' '
+
                     };
         this.handleNameChange = this.handleNameChange.bind(this) 
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.handleEdit = this.handleEdit.bind(this)       
+        this.handleEdit = this.handleEdit.bind(this)
+        this.handlePhoneChange = this.handlePhoneChange.bind(this)     
     }; 
 
     handleNameChange(event) {
@@ -70,21 +79,19 @@ import ReactDOM from "react-dom";
                             Phone Number:
                             <input type="number" name="number" onChange={this.handlePhoneChange} defaultValue={this.state.number} />
                         </label>
-                        <input type="submit" value="Submit" />
                     <h2>Educational Experience</h2>
                         <label>
                             School Name:
-                            <input type="text" name="school-name"></input>
+                            <input type="text" name="schoolName"></input>
                         </label>
                         <label>
                             Title of Study:
-                            <input type="text" name="title"></input>
+                            <input type="text" name="studyTitle"></input>
                         </label>
                         <label>
                             Date of Study:
-                            <input type="text" name="date-of-study"></input>
+                            <input type="text" name="dateOfStudy"></input>
                         </label>
-                        <input type="submit" value="Submit" />
                         <h2>Practical Experience</h2>
                         <label>
                             Company Name:
@@ -92,15 +99,15 @@ import ReactDOM from "react-dom";
                         </label>
                         <label>
                             Position Title:
-                            <input type="text" name="position-title"></input>
+                            <input type="text" name="positionTitle"></input>
                         </label>
                         <label>
                             Date Started:
-                            <input type="number" name="date-started"></input>
+                            <input type="number" name="dateStarted"></input>
                         </label>
                         <label>
                             Date Ended:
-                            <input type="number" name="date-started"></input>
+                            <input type="number" name="dateEnded"></input>
                         </label>
                         <input type="submit" value="Submit" />
                     </form>
