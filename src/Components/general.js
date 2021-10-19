@@ -22,7 +22,8 @@ import ReactDOM from "react-dom";
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleEdit = this.handleEdit.bind(this)
         this.handlePhoneChange = this.handlePhoneChange.bind(this)
-        this.handleSchoolNameChange = this.handleSchoolNameChange.bind(this)   
+        this.handleSchoolNameChange = this.handleSchoolNameChange.bind(this)
+        this.handleStudyTitleChange = this.handleStudyTitleChange.bind(this)
     }; 
 
     handleNameChange(event) {
@@ -49,6 +50,12 @@ import ReactDOM from "react-dom";
         })
     }
     
+    handleStudyTitleChange(event) {
+        this.setState({
+            studyTitle:event.target.value
+        })
+    }
+
     handleSubmit(event) {
         this.setState({
             formToggle:false,
@@ -92,7 +99,7 @@ import ReactDOM from "react-dom";
                         </label>
                         <label>
                             Title of Study:
-                            <input type="text" name="studyTitle"></input>
+                            <input type="text" name="studyTitle" onChange={this.handleStudyTitleChange} defaultValue={this.state.studyTitle} />
                         </label>
                         <label>
                             Date of Study:
