@@ -26,6 +26,8 @@ import ReactDOM from "react-dom";
         this.handleStudyTitleChange = this.handleStudyTitleChange.bind(this)
         this.handleDateOfStudyChange = this.handleDateOfStudyChange.bind(this)
         this.handleCompanyChange = this.handleCompanyChange.bind(this)
+        this.handlePositionTitleChange = this.handlePositionTitleChange.bind(this)
+        this.handleDateStartedChange = this.handleDateStartedChange.bind(this)
     }; 
 
     handleNameChange(event) {
@@ -74,6 +76,12 @@ import ReactDOM from "react-dom";
         this.setState({
             positionTitle:event.target.value
         });
+    }
+
+    handleDateStartedChange(event) {
+        this.setState({
+            dateStarted:event.target.value
+        })
     }
 
     handleSubmit(event) {
@@ -136,7 +144,7 @@ import ReactDOM from "react-dom";
                         </label>
                         <label>
                             Date Started:
-                            <input type="number" name="dateStarted"></input>
+                            <input type="number" name="dateStarted" onChange={this.handleDateStartedChange} defaultValue={this.state.dateStarted}></input>
                         </label>
                         <label>
                             Date Ended:
