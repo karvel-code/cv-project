@@ -8,7 +8,8 @@ import ReactDOM from "react-dom";
                       email:' ',
                       number:' '  
                     };
-        this.handleNameChange = this.handleNameChange.bind(this)            
+        this.handleNameChange = this.handleNameChange.bind(this) 
+        this.handleEmailChange = this.handleEmailChange.bind(this)           
     }; 
 
     handleNameChange(event) {
@@ -78,6 +79,7 @@ import ReactDOM from "react-dom";
                 </form>
 
                 <h1>{this.state.name}</h1>
+                <h1>{this.state.email}</h1>
             </div>
         )
     }
