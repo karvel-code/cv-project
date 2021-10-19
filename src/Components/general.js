@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 
  export class General extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {value: 'name'
+        }
+    }; 
     render () {
         return (
             <div>
