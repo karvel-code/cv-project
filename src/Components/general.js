@@ -36,6 +36,13 @@ import ReactDOM from "react-dom";
         event.preventDefault();
     }
 
+    handleEdit() {
+        this.setState({
+            formToggle:true,
+            contentToggle:false
+        })
+    }
+
     render () {
         if (this.state.formToggle == true) {
             return (
@@ -98,6 +105,7 @@ import ReactDOM from "react-dom";
                     <h1>{this.state.name}</h1>
                     <h1>{this.state.email}</h1>
                     <h1>{this.state.number}</h1>
+                    <input type="submit"value="Edit" />
                 </div>
             )
         }
