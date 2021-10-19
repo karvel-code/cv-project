@@ -4,11 +4,25 @@ import ReactDOM from "react-dom";
  export class General extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {name: '',
-                      email:'',
-                      number:''  
-        };
+        this.state = {name: ' ',
+                      email:' ',
+                      number:' '  
+                    };
+        this.handleNameChange = this.handleNameChange.bind(this)            
     }; 
+
+    handleNameChange(event) {
+        this.setState({
+            name: event.target.value
+        });
+    };
+
+    handleEmailChange(event) {
+        this.setState({
+            email: event.target.value
+        });
+    };
+
     render () {
         return (
             <div>
@@ -18,11 +32,11 @@ import ReactDOM from "react-dom";
                 <h2>General Info</h2>
                     <label>
                         Name:
-                        <input type="text" name="name"></input>
+                        <input type="text" name="name" onChange={this.handleNameChange}></input>
                     </label>
                     <label>
                         Email:
-                        <input type="email" name="email"></input>
+                        <input type="email" name="email" onChange={this.handleEmailChange}></input>
                     </label>
                     <label>
                         Phone Number:
@@ -62,6 +76,8 @@ import ReactDOM from "react-dom";
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
+
+                <h1>{this.state.name}</h1>
             </div>
         )
     }
