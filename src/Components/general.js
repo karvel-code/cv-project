@@ -16,13 +16,13 @@ import ReactDOM from "react-dom";
                       positionTitle:' ',
                       dateStarted:' ',
                       dateEnded:' '
-
                     };
         this.handleNameChange = this.handleNameChange.bind(this) 
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleEdit = this.handleEdit.bind(this)
-        this.handlePhoneChange = this.handlePhoneChange.bind(this)     
+        this.handlePhoneChange = this.handlePhoneChange.bind(this)
+        this.handleSchoolNameChange = this.handleSchoolNameChange.bind(this)   
     }; 
 
     handleNameChange(event) {
@@ -41,6 +41,12 @@ import ReactDOM from "react-dom";
         this.setState({
             number:event.target.value
         });
+    }
+
+    handleSchoolNameChange(event) {
+        this.setState({
+            schoolName:event.target.value
+        })
     }
     
     handleSubmit(event) {
@@ -82,7 +88,7 @@ import ReactDOM from "react-dom";
                     <h2>Educational Experience</h2>
                         <label>
                             School Name:
-                            <input type="text" name="schoolName"></input>
+                            <input type="text" name="schoolName" onChange={this.handleSchoolNameChange} defaultValue={this.state.schoolName}/>
                         </label>
                         <label>
                             Title of Study:
