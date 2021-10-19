@@ -28,6 +28,10 @@ import ReactDOM from "react-dom";
     };
     
     handleSubmit(event) {
+        this.setState({
+            formToggle:false,
+            contentToggle:true
+        })
        console.log(this.state)
         event.preventDefault();
     }
@@ -86,7 +90,11 @@ import ReactDOM from "react-dom";
                         </label>
                         <input type="submit" value="Submit" />
                     </form>
-    
+                </div>
+            )
+        } else if (this.state.contentToggle == true) {
+            return(
+                <div>
                     <h1>{this.state.name}</h1>
                     <h1>{this.state.email}</h1>
                     <h1>{this.state.number}</h1>
