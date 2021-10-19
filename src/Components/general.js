@@ -51,6 +51,7 @@ import ReactDOM from "react-dom";
                         Date Ended:
                         <input type="number" name="date-started"></input>
                     </label>
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
         )
