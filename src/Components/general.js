@@ -167,6 +167,13 @@ import ReactDOM from "react-dom";
                     <h1>{this.state.name}</h1>
                     <h1>{this.state.email}</h1>
                     <h1>{this.state.number}</h1>
+                    <h1>{this.state.schoolName}</h1>
+                    <h1>{this.state.studyTitle}</h1>
+                    <h1>{this.state.dateOfStudy}</h1>
+                    <h1>{this.state.company}</h1>
+                    <h1>{this.state.positionTitle}</h1>
+                    <h1>{this.state.dateStarted}</h1>
+                    <h1>{this.state.dateEnded}</h1>
                     <input type="submit"value="Edit" onClick={this.handleEdit} />
                 </div>
             )
