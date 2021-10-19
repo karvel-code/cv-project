@@ -27,6 +27,12 @@ import ReactDOM from "react-dom";
             email: event.target.value
         });
     };
+
+    handlePhoneChange(event) {
+        this.setState({
+            number:event.target.value
+        });
+    }
     
     handleSubmit(event) {
         this.setState({
@@ -54,15 +60,15 @@ import ReactDOM from "react-dom";
                     <h2>General Info</h2>
                         <label>
                             Name:
-                            <input type="text" name="name" onChange={this.handleNameChange} />
+                            <input type="text" name="name" onChange={this.handleNameChange} defaultValue={this.state.name} />
                         </label>
                         <label>
                             Email:
-                            <input type="email" name="email" onChange={this.handleEmailChange}/>
+                            <input type="email" name="email" onChange={this.handleEmailChange} defaultValue={this.state.email}/>
                         </label>
                         <label>
                             Phone Number:
-                            <input type="number" name="number" />
+                            <input type="number" name="number" onChange={this.handlePhoneChange} defaultValue={this.state.number} />
                         </label>
                         <input type="submit" value="Submit" />
                     <h2>Educational Experience</h2>
