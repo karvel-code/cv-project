@@ -112,7 +112,7 @@ import '../scss/general.scss';
         if (this.state.formToggle == true) {
             return (
                 <div>
-                    <h1 className="title">CV Applicattion</h1>
+                    <h1 className="title">CV Application</h1>
                     
                     <form onSubmit={this.handleSubmit} className="form">
                     <h2>General Info</h2>
@@ -165,17 +165,17 @@ import '../scss/general.scss';
         } else if (this.state.contentToggle == true) {
             return(
                 <div className="card">
-                    <p>{this.state.name}</p>
-                    <p>{this.state.email}</p>
-                    <p>{this.state.number}</p>
-                    <p>{this.state.schoolName}</p>
-                    <p>{this.state.studyTitle}</p>
-                    <p>{this.state.dateOfStudy}</p>
-                    <p>{this.state.company}</p>
-                    <p>{this.state.positionTitle}</p>
-                    <p>{this.state.dateStarted}</p>
-                    <p>{this.state.dateEnded}</p>
-                    <input type="submit"value="Edit" onClick={this.handleEdit} />
+                    <p className="card-text">{this.state.name}</p>
+                    <p className="card-text">{this.state.email}</p>
+                    <p className="card-text">{this.state.number}</p>
+                    <p className="card-text">{this.state.schoolName}</p>
+                    <p className="card-text">{this.state.studyTitle}</p>
+                    <p className="card-text">{this.state.dateOfStudy}</p>
+                    <p className="card-text">{this.state.company}</p>
+                    <p className="card-text">{this.state.positionTitle}</p>
+                    <p className="card-text">{this.state.dateStarted}</p>
+                    <p className="card-text">{this.state.dateEnded}</p>
+                    <input type="submit"value="Edit" onClick={this.handleEdit} class="edit" />
                 </div>
             )
         }

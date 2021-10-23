@@ -33,3 +33,35 @@
     color: white;
     font-weight: 700;
 }
+
+.card {
+    border: 3px solid black;
+    width: 30%;
+    margin: auto;
+    border-radius: 1%;
+}
+
+.card-text {
+    // text-align: center;
+    // width: 30%;
+    // margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
+
+}
+
+.edit {
+    padding: 1%;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: rgb(12, 88, 88);
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
