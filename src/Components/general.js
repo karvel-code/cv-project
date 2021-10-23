@@ -112,7 +112,7 @@ import '../scss/general.scss';
         if (this.state.formToggle == true) {
             return (
                 <div>
-                    <h1>CV Applicattion</h1>
+                    <h1 className="title">CV Applicattion</h1>
                     
                     <form onSubmit={this.handleSubmit} className="form">
                     <h2>General Info</h2>
