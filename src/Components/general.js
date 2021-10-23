@@ -158,7 +158,7 @@ import '../scss/general.scss';
                             Date Ended:
                             <input type="number" name="dateEnded" onChange={this.handleDateEndedChange} defaultValue={this.state.dateEnded} />
                         </label>
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit" className="submit-btn" />
                     </form>
                 </div>
             )
