@@ -164,17 +164,17 @@ import '../scss/general.scss';
             )
         } else if (this.state.contentToggle == true) {
             return(
-                <div>
-                    <h1>{this.state.name}</h1>
-                    <h1>{this.state.email}</h1>
-                    <h1>{this.state.number}</h1>
-                    <h1>{this.state.schoolName}</h1>
-                    <h1>{this.state.studyTitle}</h1>
-                    <h1>{this.state.dateOfStudy}</h1>
-                    <h1>{this.state.company}</h1>
-                    <h1>{this.state.positionTitle}</h1>
-                    <h1>{this.state.dateStarted}</h1>
-                    <h1>{this.state.dateEnded}</h1>
+                <div className="card">
+                    <p>{this.state.name}</p>
+                    <p>{this.state.email}</p>
+                    <p>{this.state.number}</p>
+                    <p>{this.state.schoolName}</p>
+                    <p>{this.state.studyTitle}</p>
+                    <p>{this.state.dateOfStudy}</p>
+                    <p>{this.state.company}</p>
+                    <p>{this.state.positionTitle}</p>
+                    <p>{this.state.dateStarted}</p>
+                    <p>{this.state.dateEnded}</p>
                     <input type="submit"value="Edit" onClick={this.handleEdit} />
                 </div>
             )
