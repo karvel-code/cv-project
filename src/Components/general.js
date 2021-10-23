@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import '../scss/general.scss';
 
  export class General extends React.Component {
     constructor(props) {
@@ -113,47 +114,47 @@ import ReactDOM from "react-dom";
                 <div>
                     <h1>CV Applicattion</h1>
                     
-                    <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleSubmit} className="form">
                     <h2>General Info</h2>
-                        <label>
+                        <label className="form-label">
                             Name:
                             <input type="text" name="name" onChange={this.handleNameChange} defaultValue={this.state.name} />
                         </label>
-                        <label>
+                        <label className="form-label">
                             Email:
                             <input type="email" name="email" onChange={this.handleEmailChange} defaultValue={this.state.email}/>
                         </label>
-                        <label>
+                        <label className="form-label">
                             Phone Number:
                             <input type="number" name="number" onChange={this.handlePhoneChange} defaultValue={this.state.number} />
                         </label>
                     <h2>Educational Experience</h2>
-                        <label>
+                        <label className="form-label">
                             School Name:
                             <input type="text" name="schoolName" onChange={this.handleSchoolNameChange} defaultValue={this.state.schoolName}/>
                         </label>
-                        <label>
+                        <label className="form-label">
                             Title of Study:
                             <input type="text" name="studyTitle" onChange={this.handleStudyTitleChange} defaultValue={this.state.studyTitle} />
                         </label>
-                        <label>
+                        <label className="form-label">
                             Date of Study:
                             <input type="text" name="dateOfStudy" onChange={this.handleDateOfStudyChange} defaultValue={this.state.dateOfStudy} />
                         </label>
                         <h2>Practical Experience</h2>
-                        <label>
+                        <label className="form-label">
                             Company Name:
                             <input type="text" name="company" onChange={this.handleCompanyChange} defaultValue={this.state.company} />
                         </label>
-                        <label>
+                        <label className="form-label">
                             Position Title:
                             <input type="text" name="positionTitle" onChange={this.handlePositionTitleChange} defaultValue={this.state.positionTitle} />
                         </label>
-                        <label>
+                        <label className="form-label">
                             Date Started:
                             <input type="number" name="dateStarted" onChange={this.handleDateStartedChange} defaultValue={this.state.dateStarted} />
                         </label>
-                        <label>
+                        <label className="form-label">
                             Date Ended:
                             <input type="number" name="dateEnded" onChange={this.handleDateEndedChange} defaultValue={this.state.dateEnded} />
                         </label>
