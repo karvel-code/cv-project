@@ -1,0 +1,67 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    // margin-right: 10%;
+}
+
+.title {
+    text-align: center;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    input {
+        padding: 1.5%;
+        margin: 1%;
+    }
+}
+
+.submit-btn {
+    padding: 2%;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(12, 88, 88);
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.card {
+    border: 3px solid black;
+    width: 30%;
+    margin: auto;
+    border-radius: 1%;
+}
+
+.card-text {
+    // text-align: center;
+    // width: 30%;
+    // margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
+
+}
+
+.edit {
+    padding: 1%;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: rgb(12, 88, 88);
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
